@@ -1,0 +1,28 @@
+GET http://localhost:3000
+
+###
+
+POST http://localhost:3000/usuario
+Content-Type: application/json
+
+{
+    "nome": "John Doe",
+    "email": "misamisa@gmail.com",
+    "senha": "222222"
+}
+
+###
+GET http://localhost:3000/usuario/3
+
+###
+DELETE http://localhost:3000/usuario/2
+
+###
+
+PATCH http://localhost:3000/usuario/3
+Content-Type: application/json
+
+{
+    "nome": "John Doesty",
+    "email": "misael32@gmail.com"
+}
